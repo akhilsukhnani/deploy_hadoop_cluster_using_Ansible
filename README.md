@@ -26,8 +26,9 @@ Apache Hadoop is a collection of open-source software utilities that facilitates
 A complete setup of HDFS Cluster is quite time consuming , and involves repetitive steps , to avoid that we used intelligence and power of ansible.
 It involves these steps:-
 
-```steps for configuring a Hadoop
-At name node-
+# Steps for configuring a Hadoop Cluster
+
+```At name node-
             
 1. download the packages(jdk and hadoop)                                    
 2. install the packages(jdk and hadoop)                                       
@@ -49,8 +50,8 @@ At data-node
 ```
 
 <H1>Variables used in the playbook</H1>
-```
-hadoop_report: "hadoop dfsadmin -report"
+
+```hadoop_report: "hadoop dfsadmin -report"
 start_datanode: "hadoop-daemon.sh start datanode"
 hdfs_loc: "/etc/hadoop/hdfs-site.xml"
 hdfs_datanode: "/root/hadoop_ansible/hdfs1.xml"
@@ -64,12 +65,11 @@ format_namenode: "yes Y | hadoop namenode -format"
 hdfs_namenode: "/root/hadoop_ansible/hdfs.xml"
 directory_namenode: "/name_node"
 directory_datanode: "/data_node"
-
-
 ```
 
 
 <H1>Playbook:-</H1>
+
 ```
 - hosts: name_node
   vars_files:
@@ -205,11 +205,10 @@ directory_datanode: "/data_node"
 </property>
 </configuration>
 
-
 ```
 
-
 <H2>hdfs-site.xml</H2>
+
 ```
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
@@ -225,6 +224,7 @@ directory_datanode: "/data_node"
 
 
 ```
+
 <H2>Hosts-file(contains the credentials of the managed nodes):-</H2>
 ```
 [data_node]
@@ -244,8 +244,13 @@ After that all the changes would be applied on the mentioned systems in the host
 
 That's it our cluster has been configured, we can verfiy by following ways:-
   1.running ```jps``` and ```hadoop``` command
-  <img src=''>
+  <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(3).png'>
   2.running ```hadoop dfsadmin -report```
-  <img src=''>
+  <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(2).png'>
   3.going to webUI at  ```http://<ip_of_namenode>:9001``` 
-  <img src=''>
+  <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(1).png'>
+  
+  Thanks.....!
+  
+  See this project running live at:-
+  <LinkedIN>
