@@ -259,7 +259,6 @@ That's it our cluster has been configured, we can verfiy by following ways:-
   3.going to webUI at  ```http://<ip_of_namenode>:50070``` 
   <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(1).png'>
   
-  #H1 Links for jdk and Hadoop Software
   Thanks for reading..... :)
   See this project running live at:-
   <LinkedIN>
