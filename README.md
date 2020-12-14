@@ -222,13 +222,16 @@ directory_datanode: "/data_node"
 
 [name_node]
 <ip_address>  ansible_user=root ansible_ssh_pass=<password> ansible_connection=ssh
+
 ```
 
 
 <H1>And the main command to run the playbook:-</H1>
+
 ```
 ansible-playbook playbook.yml
 ```
+
 <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/task111.png'>
 After that all the changes would be applied on the mentioned systems in the hosts.txt file
 
