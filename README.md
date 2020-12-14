@@ -2,6 +2,12 @@
 <H1>Deploying complete Hadoop Cluster using Ansible</H1>
 <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/explaination-task11.png'>
 
+# Prerequisite:- <br />
+--->Ansible Configured<br />
+--->Packages <br />
+                                 1. [Hadoop Software](https://archive.apache.org/dist/hadoop/core/hadoop-1.2.1/hadoop-1.2.1-1.x86_64.rpm)       <br />
+                                 2. [Java JDK software](https://repo.huaweicloud.com/java/jdk/8u171-b11/jdk-8u171-linux-x64.rpm) <br />
+
 # What is Ansible? 
 <img src='https://avatars1.githubusercontent.com/u/1507452?s=200&v=4'>
 Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. 
@@ -251,7 +257,7 @@ That's it our cluster has been configured, we can verfiy by following ways:-
   3.going to webUI at  ```http://<ip_of_namenode>:50070``` 
   <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(1).png'>
   
-  Thanks.....!
-  
+  #H1 Links for jdk and Hadoop Software
+  Thanks for reading..... :)
   See this project running live at:-
   <LinkedIN>
