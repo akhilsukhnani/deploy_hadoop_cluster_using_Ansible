@@ -36,7 +36,7 @@ A complete setup of HDFS Cluster is quite time consuming , and involves repetiti
 It involves these steps:-
 
 # Steps for configuring a Hadoop Cluster
-
+7
 ```At name node-
             
 1. download the packages(jdk and hadoop)                                    
@@ -260,5 +260,5 @@ That's it our cluster has been configured, we can verfiy by following ways:-
   <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(1).png'>
   
   Thanks for reading..... :)
-  See this project running live at:-
+  See this project running live at:- <br />
   <LinkedIN>
