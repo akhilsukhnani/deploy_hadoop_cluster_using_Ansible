@@ -1,5 +1,6 @@
+
+<H1>Deploying complete Hadoop Cluster using Ansible</H1>
 <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/explaination-task11.png'>
-# Deploying complete Hadoop Cluster using Ansible
 
 # What is Ansible? 
 <img src='https://avatars1.githubusercontent.com/u/1507452?s=200&v=4'>
