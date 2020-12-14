@@ -3,8 +3,8 @@
 <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/explaination-task11.png'>
 
 # Prerequisite:- <br />
---->Ansible Configured<br />
---->Packages <br />
+---><b>Ansible Configured</b><br />
+---><b>Packages </b><br />
 ______________________________[Hadoop Software](https://archive.apache.org/dist/hadoop/core/hadoop-1.2.1/hadoop-1.2.1-1.x86_64.rpm)______    <br />
 ____________________________**[Java JDK software](https://repo.huaweicloud.com/java/jdk/8u171-b11/jdk-8u171-linux-x64.rpm)**_______<br />
 
