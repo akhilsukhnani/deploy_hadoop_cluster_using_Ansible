@@ -1,6 +1,7 @@
 # Deploying complete Hadoop Cluster using Ansible
 
 # What is Ansible? 
+<img src='https://avatars1.githubusercontent.com/u/1507452?s=200&v=4'>
 Ansible is a radically simple IT automation platform that makes your applications and systems easier to deploy and maintain. Automate everything from code deployment to network configuration to cloud management, in a language that approaches plain English, using SSH, with no agents to install on remote systems. 
 Ansible is the simplest way to automate apps and IT infrastructure. Application Deployment + Configuration Management + Continuous Delivery
 Ansible is an open-source software provisioning, configuration management, and application-deployment tool enabling infrastructure as code. It runs on many Unix-like systems, and can configure both Unix-like systems as well as Microsoft Windows.
