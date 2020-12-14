@@ -5,8 +5,8 @@
 # Prerequisite:- <br />
 --->Ansible Configured<br />
 --->Packages <br />
-____________________________***[Hadoop Software](https://archive.apache.org/dist/hadoop/core/hadoop-1.2.1/hadoop-1.2.1-1.x86_64.rpm)______***     <br />
-____________________________***[Java JDK software](https://repo.huaweicloud.com/java/jdk/8u171-b11/jdk-8u171-linux-x64.rpm)*** ___________<br />
+____________________________**[Hadoop Software](https://archive.apache.org/dist/hadoop/core/hadoop-1.2.1/hadoop-1.2.1-1.x86_64.rpm)______**     <br />
+____________________________**[Java JDK software](https://repo.huaweicloud.com/java/jdk/8u171-b11/jdk-8u171-linux-x64.rpm)**_______<br />
 
 # What is Ansible? 
 <img src='https://avatars1.githubusercontent.com/u/1507452?s=200&v=4'>
