@@ -191,12 +191,8 @@ directory_datanode: "/data_node"
 <H1>Files that would be copied after configuration(core-site.xml,hdfs-site.xml)</H1>
 
 <H2>Core-site.xml</H2>
+
 ```
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-
-<!-- Put site-specific property overrides in this file. -->
-
 <configuration>
 <property>
 <name>fs.default.name</name>
@@ -211,19 +207,12 @@ directory_datanode: "/data_node"
 <H2>hdfs-site.xml</H2>
 
 ```
-<?xml version="1.0"?>
-<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
-
-<!-- Put site-specific property overrides in this file. -->
-
 <configuration>
 <property>
 <name>dfs.name.dir</name>
 <value>/name_node</value>
 </property>
 </configuration>
-
-
 ```
 
 <H2>Hosts-file(contains the credentials of the managed nodes):-</H2>
