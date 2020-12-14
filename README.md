@@ -10,7 +10,7 @@ Ansible is an open-source software provisioning, configuration management, and a
 
 <H1>Major Components of Ansible:-</H1>
 
-<H2><Ansible Playbook:-</H2><p>Playbooks are the files where Ansible code is written. ... Playbooks are one of the core features of Ansible and tell Ansible what to execute. They are like a to-do list for Ansible that contains a list of tasks. Playbooks contain the steps which the user wants to execute on a particular machine.<p>
+<H2><Ansible Playbook:-</H2>Playbooks are the files where Ansible code is written. ... Playbooks are one of the core features of Ansible and tell Ansible what to execute. They are like a to-do list for Ansible that contains a list of tasks. Playbooks contain the steps which the user wants to execute on a particular machine.
 
 <H2>Modules:-</H2> Ansible modules are reusable, standalone scripts that can be used by the Ansible API, or by the ansible or ansible-playbook programs. They return information to ansible by printing a JSON string to stdout before exiting. They take arguments in one of several ways.</H2>
 
