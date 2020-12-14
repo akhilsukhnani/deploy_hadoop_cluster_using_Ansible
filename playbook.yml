@@ -1,0 +1,115 @@
+- hosts: name_node
+  vars_files:
+          - variables.yml
+  tasks:
+   - name: Copying the necessary softwares
+     copy:
+        src: "{{ item }}"
+        dest: /root/
+     with_fileglob:
+        - /root/hadoop_ansible/packages/* 
+   - name: Creating directory for name_node to store metdata
+     file:
+        path: "{{ directory_namenode }}"
+        state: directory
+        mode: '0755'
+   - name: Installing the java software
+     shell: "{{ jdk_install }}"
+     register: result
+     ignore_errors: yes
+
+   - name: Installing  hadoop software
+     shell: "{{ hadoop_install  }}"
+     register: result1
+     ignore_errors: yes
+   
+   - name: Status check
+     debug:
+             var: 
+               - result
+               - result1
+
+   - name: Copying the coresite file
+     template:
+        src: "{{ coresite_file }}"
+        dest: "{{ coresite_location}}"
+
+   - name: Copying hdfs-site.xml file
+     template:
+        src: "{{hdfs_namenode}}"
+        dest: "{{ hdfs_loc }}"
+   
+   - name: disabling the firewalld
+     service:
+             name: firewalld
+             state: stopped
+             enabled: False   
+   - name: Format the folder
+     shell: "{{ format_namenode }}"
+     register: format_status
+     ignore_errors: yes
+
+   - name: start the namenode
+     shell: "{{ start_namenode }}"
+     register: format_status
+     ignore_errors: yes
+
+   
+- hosts: data_node
+  vars_files:
+          - variables.yml
+  tasks:
+   - name: Copying the necessary softwares
+     copy:
+        src: "{{ item }}"
+        dest: /root/
+     with_fileglob:
+        - "{{ packages  }}"
+   - name: creating directory for data_node to share the storage
+     file:
+        path: "{{directory_datanode}}"
+        state: directory
+        mode: '0755'
+
+   - name: Installing  java
+     shell: "{{ jdk_install }}"
+     register: result2
+     ignore_errors: yes
+
+   - name: Installing hadoop software
+     shell: "{{ hadoop_install }}"
+     register: result3  
+     ignore_errors: yes
+
+   - name: testing
+     debug:
+             var : 
+               - result2
+               - result3
+
+   - name: Copying the coresite file
+     template:
+        src: "{{coresite_file}}"
+        dest: "{{ coresite_location }}"
+
+   - name: Copying hdfs-site.xml
+     template:
+        src: "{{ hdfs_datanode }}"
+        dest: "{{ hdfs_loc }}"
+
+   - name: disabling the firewalld
+     service:
+             name: firewalld
+             state: stopped
+             enabled: False
+
+   - name: starting data-node
+     shell: "{{ start_datanode }}"
+     register: datanode_status
+     ignore_errors: yes
+  
+   - name: report of cluster
+     shell: "{{ hadoop_report }}"
+     register: datanode_status
+     ignore_errors: yes
+ 
