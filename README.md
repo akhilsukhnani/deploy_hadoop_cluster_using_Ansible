@@ -217,29 +217,37 @@ directory_datanode: "/data_node"
 
 <H2>Hosts-file(contains the credentials of the managed nodes):-</H2>
 
+```
 [data_node]
 <ip_address>  ansible_user=root ansible_ssh_pass=<password> ansible_connection=ssh
 
 [name_node]
 <ip_address>  ansible_user=root ansible_ssh_pass=<password> ansible_connection=ssh
 
+```
 
 
 
 <H1>And the main command to run the playbook:-</H1>
 
-
+```
 ansible-playbook playbook.yml
-
+```
 
 <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/task111.png'>
+
 After that all the changes would be applied on the mentioned systems in the hosts.txt file
 
 That's it our cluster has been configured, we can verfiy by following ways:-
   1.running ```jps``` and ```hadoop``` command
+  
   <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(3).png'>
+  
+  
   2.running ```hadoop dfsadmin -report```
   <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(2).png'>
+  
+  
   3.going to webUI at  ```http://<ip_of_namenode>:9001``` 
   <img src='https://github.com/akhilsukhnani/deploy_hadoop_cluster_using_Ansible/blob/main/verify_task11(1).png'>
   
